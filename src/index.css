@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "jorick";
+  src: url("/fonts/Jorick-Regular.woff2") format("woff2");
+  src: url("/fonts/Jorick-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
