@@ -1,9 +1,24 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "jorick";
-  src: url("/fonts/Jorick-Regular.woff2") format("woff2");
-  src: url("/fonts/Jorick-Regular.woff") format("woff");
+  font-family: "ethnic";
+  src: url("/fonts/Ethnic.ttf") format("ttf");
+  src: url("/fonts/Ethnic.woff") format("woff");
+  /* src: url("/fonts/Jorick-Regular.woff") format("woff"); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "trajan";
+  src: url("/fonts/trajan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "trajan-bold";
+  src: url("/fonts/trajan-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

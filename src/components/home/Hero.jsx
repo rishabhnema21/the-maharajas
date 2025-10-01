@@ -1,36 +1,51 @@
 import React from "react";
 import Badge from "../Badge";
+import Logo from "../Logo";
 
 const Hero = () => {
   return (
-    <section className='relative overflow-x-hidden min-h-screen w-screen p-4 bg-[url("/herobg.webp")] bg-cover bg-no-repeat bg-[position:30%_70%]'>
+    <section className='relative overflow-x-hidden min-h-screen w-screen p-2 md:p-4 bg-[#070302]'>
       <div
-        className="absolute inset-0 pointer-events-none w-full h-full z-0"
+        className="absolute z-20 inset-0 pointer-events-none w-full h-full"
         style={{
           background: `
-            radial-gradient(ellipse 70% 60% at 45% 40%, transparent 0%, transparent 35%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.85) 100%),
-            radial-gradient(circle at 20% 0%, rgba(0,0,0,0.4) 0%, transparent 30%),
-            radial-gradient(circle at 80% 20%, rgba(0,0,0,0.35) 0%, transparent 5%),
-            radial-gradient(circle at 90% 85%, rgba(0,0,0,0.45) 0%, transparent 10%)
+            linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.4) 100%),
+            radial-gradient(circle at 15% 15%, rgba(0,0,0,0.5) 0%, transparent 25%),
+            radial-gradient(circle at 85% 20%, rgba(0,0,0,0.4) 0%, transparent 20%),
+            radial-gradient(circle at 10% 85%, rgba(0,0,0,0.5) 0%, transparent 20%),
+            radial-gradient(circle at 92% 88%, rgba(0,0,0,0.55) 0%, transparent 18%)
           `,
         }}
       />
 
-      <div className="text-[#f9f3d9]  flex flex-col md:flex-row justify-between md:items-center p-2 md:p-4 z-10 absolute bottom-[0%] md:bottom-[10%] w-full">
-        <h1 className="text-9xl md:text-[16rem] leading-18 md:leading-32 lg:leading-28 font-[jorick] text-shadow-lg text-shadow-black">
-          <span className="text-5xl leading-10 md:leading-none md:text-7xl block">
+        <Logo/>
+
+      <div className="w-full h-full absolute flex justify-center items-center inset-0">
+        <img className="rounded-b-3xl object-cover h-full" src="/heroimage.webp" alt="" />
+      </div>
+
+        <div className="hidden md:block absolute z-20 left-5 w-1/5 top-36">
+          <p className="text-[#fff] text-[1rem] font-[ethnic] p-4 w-1/2"> Echoes of Maharajas - courage, legacy, and the magnificence of royal India </p>
+        </div>
+
+      <div className="text-[#ffffff] flex flex-col md:flex-row justify-between md:items-center p-2 md:p-4 z-20 absolute bottom-[15%] md:bottom-[8%] w-full">
+        <h1 className="text-7xl sm:text-8xl md:text-[11rem] leading-18 md:leading-32 lg:leading-32 font-[ethnic] text-shadow-lg text-shadow-black">
+          <span className="text-3xl leading-6 md:leading-none md:ml-1 md:text-6xl block">
             the
           </span>
-          <span className="block">
-            MAHA
+          <span className="block text-[#ffffff]">
+            Maha
             <wbr />
-            RAJAS
+            Rajas
           </span>
+          <p className="hidden md:block md:text-sm font-[trajan] ml-2 tracking-[1rem]">Reviving the legacy</p>
         </h1>
-        <div className="mt-10 md:mt-32 md:mr-12">
+        <div className="mt-10 flex justify-between items-center md:mt-32 md:mr-26">
           <Badge />
+          <div className="text-[#fff] text-sm md:hidden font-semibold font-[ethnic] p-3 w-2/3"> Echoes of Maharajas - courage, legacy, and the magnificence of royal India </div>
         </div>
       </div>
+      
     </section>
   );
 };
