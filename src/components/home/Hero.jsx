@@ -4,7 +4,7 @@ import Logo from "../Logo";
 
 const Hero = () => {
   return (
-    <section className='relative overflow-x-hidden min-h-screen w-screen p-2 md:p-4 bg-[#070302]'>
+    <section className='relative overflow-x-hidden min-h-screen w-full p-2 md:p-6 bg-[#070302]'>
       <div
         className="absolute z-20 inset-0 pointer-events-none w-full h-full"
         style={{
@@ -17,8 +17,6 @@ const Hero = () => {
           `,
         }}
       />
-
-        <Logo/>
 
       <div className="w-full h-full absolute flex justify-center items-center inset-0">
         <img className="rounded-b-3xl object-cover h-full" src="/heroimage.webp" alt="" />
