@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const scenes = [
   {
@@ -23,10 +26,42 @@ const scenes = [
 
 
 const Intro = () => {
+
+  const sectionRef = useRef();
+  const imageRef = useRef();
+  const textRef = useRef();
+
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.to(imageRef.current, {
+      y: -100,
+      ease: "none",
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 95%",
+        end: "bottom top",
+        scrub: 1
+      }
+    })
+
+    gsap.from(textRef.current, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  }, {scope: sectionRef})
+
   return (
-    <div className="p-2 md:p-6 bg-[#070302] w-full">
+    <div ref={sectionRef} className="p-2 md:p-6 bg-[#070302] w-full">
       <div className="mt-20 flex flex-col-reverse md:flex-row-reverse justify-center">
-        <div className="mt-8 z-10 w-full md:w-1/2 p-4 right-8 mr-24 font-[ethnic]">
+        <div ref={textRef} className="mt-8 z-10 w-full md:w-1/2 p-4 right-8 mr-24 font-[ethnic]">
           <h1 className="text-white text-shadow-lg text-6xl md:text-7xl md:font-semibold ml-2 -mt-16 md:mt-0 md:ml-3">
             Through the Halls
           </h1>
@@ -46,7 +81,7 @@ const Intro = () => {
             preserving the legacy of rulers and their reigns.
           </p>
         </div>
-        <div className="rounded-2xl w-[80vw] md:w-1/2 h-[20rem] md:h-[30rem] relative left-4 md:left-24 overflow-hidden">
+        <div ref={imageRef} className="rounded-2xl w-[80vw] md:w-1/2 h-[20rem] md:h-[30rem] relative left-4 md:left-24 overflow-hidden">
           <img
             src="/herobg.webp"
             className="object-cover object-bottom w-full h-full"
