@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Badge from "../Badge";
-import Logo from "../Logo";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -19,7 +18,7 @@ const Hero = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: "bottom 40%",
+          end: "+=100%",
           scrub: 1,
           pin: true,
           anticipatePin: 1,
@@ -51,14 +50,14 @@ const Hero = () => {
           },
           0.2
         )
-        .to(
-          [heroHeadingRef.current, imageRef.current, contentRef.current],
+
+        .set(
+          [imageRef.current, heroHeadingRef.current, contentRef.current],
           {
-            opacity: 0,
-            duration: 0.5,
-            ease: "power2.inOut",
+            visibility: "hidden",
+            pointerEvents: "none",
           },
-          0.7
+          ">"
         );
     },
     { scope: sectionRef }
@@ -67,7 +66,7 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-x-hidden min-h-screen w-full p-2 md:p-6 bg-[#070302]"
+      className="relative overflow-x-hidden h-screen w-full p-2 md:p-6 bg-[#070302]"
     >
       <div
         className="absolute z-20 inset-0 pointer-events-none w-full h-full"
@@ -87,9 +86,9 @@ const Hero = () => {
         className="w-full h-full absolute flex justify-center items-center inset-0"
       >
         <img
-          className="rounded-b-3xl object-cover h-full"
+          className="rounded-b-3xl object-cover h-full w-full"
           src="/heroimage.webp"
-          alt=""
+          alt="hero"
         />
       </div>
 
@@ -97,14 +96,13 @@ const Hero = () => {
         ref={contentRef}
         className="hidden md:block absolute z-20 left-5 w-1/5 top-36"
       >
-        <p className="text-[#fff] text-[1rem] font-[ethnic] p-4 w-1/2">
-          {" "}
+        <p className="text-white text-[1rem] font-[ethnic] p-4 w-1/2">
           Echoes of Maharajas - courage, legacy, and the magnificence of royal
-          India{" "}
+          India
         </p>
       </div>
 
-      <div className="text-[#ffffff] flex flex-col md:flex-row justify-between md:items-center p-2 md:p-4 z-20 absolute bottom-[15%] md:bottom-[8%] w-full">
+      <div className="text-white flex flex-col md:flex-row justify-between md:items-center p-2 md:p-4 z-20 absolute bottom-[15%] md:bottom-[8%] w-full">
         <h1
           ref={heroHeadingRef}
           className="text-7xl sm:text-8xl md:text-[11rem] leading-18 md:leading-32 lg:leading-32 font-[ethnic] text-shadow-lg text-shadow-black"
@@ -112,7 +110,7 @@ const Hero = () => {
           <span className="text-3xl leading-6 md:leading-none md:ml-1 md:text-6xl block">
             the
           </span>
-          <span className="block text-[#ffffff]">
+          <span className="block text-white">
             Maha
             <wbr />
             Rajas
@@ -121,12 +119,12 @@ const Hero = () => {
             Reviving the legacy
           </p>
         </h1>
+
         <div className="mt-10 flex justify-between items-center md:mt-32 md:mr-26">
           <Badge />
-          <div className="text-[#fff] text-sm md:hidden font-semibold font-[ethnic] p-3 w-2/3">
-            {" "}
+          <div className="text-white text-sm md:hidden font-semibold font-[ethnic] p-3 w-2/3">
             Echoes of Maharajas - courage, legacy, and the magnificence of royal
-            India{" "}
+            India
           </div>
         </div>
       </div>
