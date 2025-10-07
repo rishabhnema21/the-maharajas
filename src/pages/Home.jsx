@@ -5,6 +5,7 @@ import Intro from '../components/home/Intro';
 import { Fluid } from '@whatisjery/react-fluid-distortion';
 import { EffectComposer } from '@react-three/postprocessing';
 import { Canvas } from '@react-three/fiber';
+import FinalHome from '../components/home/FinalHome';
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
       <Navigation />
       <Hero />
       <Intro />
+      <FinalHome />
     </main>
   );
 };
