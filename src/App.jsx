@@ -2,6 +2,7 @@ import React from 'react'
 import { ReactLenis, useLenis } from 'lenis/react'
 import { Routes, Route } from 'react-router'
 import Home from './pages/Home'
+import Footer from './components/home/Footer'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Home />}/>
     </Routes>
+    <Footer/>
     </>
   )
 }
