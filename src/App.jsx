@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router'
 import Home from './pages/Home'
 import Footer from './components/home/Footer'
 import Navigation from './components/Navigation'
+import About from './pages/About'
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
     <ReactLenis root />
     <Routes>
       <Route path='/' element={<Home />}/>
+      <Route path='/about' element={<About />}/>
     </Routes>
     <Footer/>
     </div>
