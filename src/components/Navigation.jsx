@@ -2,8 +2,14 @@ import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router";
 
-const navLinks = ["Home", "About", "Empires", "Legacy"];
+const navLinks = [
+  {name: "Home", path: "/"},
+  {name: "About", path: "/about"},
+  {name: "Empires", path: "/empires"},
+  {name: "Legacy", path: "/legacy"}
+];
 
 const overLay = {
   hidden: {
@@ -52,7 +58,7 @@ const Navigation = () => {
   }, [isOpen])
 
   return (
-    <nav className="fixed w-full p-2 md:p-6 z-50 top-0 left-0 flex justify-between items-center">
+    <nav className="fixed w-full p-2 md:p-6 z-50 top-0 left-0  flex justify-between items-center">
       <Logo className="z-50" />
 
       <button
@@ -76,13 +82,13 @@ const Navigation = () => {
           </div>
             <motion.ul className="space-y-8 w-full text-center px-8 font-semibold"
             variants={overLay}>
-                {navLinks.map((link, index) => (
+                {navLinks.map(({name, path}) => (
                     <motion.li className="text-6xl md:text-7xl hover:text-[5rem] hover:text-[#6c2a10] transition-all duration-200 ease-in-out mb-5 cursor-pointer font-[ethnic]"
-                        key={index}
+                        key={name}
                         onClick={toggleMenu}
                         variants={listItems}
                     >
-                        {link}
+                        <Link to={path}>{name}</Link>
                         <hr className="h-[1px] text-gray-600" />
                     </motion.li>
                 ))}

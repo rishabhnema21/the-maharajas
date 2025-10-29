@@ -7,7 +7,6 @@ import FinalHome from '../components/home/FinalHome';
 const Home = () => {
   return (
     <main className="relative min-h-screen w-full bg-[#070302] overflow-hidden">
-      <Navigation />
       <Hero />
       <Intro />
       <FinalHome />
