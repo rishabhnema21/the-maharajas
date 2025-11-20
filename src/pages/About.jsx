@@ -21,9 +21,9 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="about-content z-50 pb-20 text-xl ml-5 md:ml-12 w-3/4 font-[ethnic]">
+      <div className="about-content z-50 pb-20 text-justify text-xl ml-5 md:ml-12 w-[60vw] font-[ethnic]">
         <p>
-          The <span className="text-red-300">Maharajas</span> is a digital
+          The <span className="text-red-400 font-medium text-4xl">Maharajas</span> is a digital
           homage to the timeless grandeur of Indian royalty — a journey through
           palaces, forts, and forgotten corridors that once defined the essence
           of regality. This project was envisioned not merely as a website, but
@@ -54,7 +54,7 @@ const About = () => {
           through facts, but through emotion.
         </p>
         <br />
-        <blockquote className="border-l-4 border-red-300 p-4 rounded-md text-white italic">
+        <blockquote className="border-l-4 border-red-300 bg-red-300/10 p-5 rounded-md text-white italic">
           These walls do not age — they remember. For even when empires crumble,
           memory stands eternal.
           <cite className="block mt-2 text-sm text-[#e1dfdf] text-right">

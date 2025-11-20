@@ -8,7 +8,7 @@ const Footer = () => {
     const navLinks = ["Home", "About", "Empires", "Legacy"];
 
   return (
-    <div className="p-2 md:p-6 bg-[#0b0707] overflow-hidden">
+    <div className="p-2 md:p-2 bg-[#0b0707] overflow-hidden">
       <div className="bg-gradient-to-tl rounded-t-3xl pb-4 rounded-b-3xl from-[#111] to-[#242424] text-3xl">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="md:ml-12 inline-block mt-9">
@@ -28,9 +28,9 @@ const Footer = () => {
         </p>
         </div>
 
-        <div className="py-2 mr-12 ml-12 mt-16 flex items-center justify-center rounded-3xl text-center">
+        {/* <div className="py-2 mr-12 ml-12 mt-16 flex items-center justify-center rounded-3xl text-center">
             <h1 className="bg-gradient-to-tl from-[#700202] to-[#b34848] bg-clip-text text-transparent font-[ethnic] text-7xl md:text-[12rem]">The Maharajas</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );

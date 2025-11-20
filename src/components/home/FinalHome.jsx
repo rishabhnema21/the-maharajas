@@ -30,7 +30,7 @@ const FinalHome = () => {
 
 
   return (
-    <div className="p-2 relative md:p-6 bg-[#1b1b1b] text-white rounded-t-3xl rounded-b-3xl w-full">
+    <div className="p-2 relative  bg-[#1b1b1b] md:p-4 text-white rounded-t-3xl rounded-b-3xl w-full">
       <div ref={sectionRef} className="parallax">
         <div className="flex">
         <div className="my-5 ml-6 inline-block font-[ethnic]">
@@ -53,7 +53,7 @@ const FinalHome = () => {
         </div>
         <div className="h-[100vh] overflow-hidden ml-8">
           <img
-            className="object-cover mask-r-from-50% h-full"
+            className="object-cover object-[6%] mask-l-from-4% mask-t-from-60% mask-b-from-70% md:mask-r-from-50% h-full"
             src="https://ik.imagekit.io/c25vdtqqp/maharajas/maharajas2.jpeg"
             alt=""
           />
@@ -62,7 +62,7 @@ const FinalHome = () => {
 
       <div className="absolute h-[40vh] md:h-[30vh] top-3/4 left-1/7 md:top-1/2 md:left-1/3 w-[45vw] md:w-[30vw]">
         <img
-          className="object-cover"
+          className="object-cover rounded-xl"
           src="https://ik.imagekit.io/c25vdtqqp/maharajas/elephant.jpg"
           alt=""
         />
