@@ -6,6 +6,7 @@ import Footer from './components/home/Footer'
 import Navigation from './components/Navigation'
 import About from './pages/About'
 import Empires from './pages/Empires'
+import EmpireDetail from './pages/EmpireDetail'
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
       <Route path='/' element={<Home />}/>
       <Route path='/about' element={<About />}/>
       <Route path='/empires' element={<Empires />}/>
+      <Route path='/empires/:empire' element={<EmpireDetail />} />
     </Routes>
     <Footer/>
     </div>
