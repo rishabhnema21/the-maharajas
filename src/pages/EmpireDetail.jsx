@@ -64,7 +64,7 @@ const EmpireDetail = () => {
               ))}
             </div>
           </div>
-          <div className="bg-emerald-800/5 overflow-hidden  w-3/4 md:w-3/4 ml-12 mt-12 md:ml-24 rounded-xl md:mr-24 md:mt-2">
+          <div className="bg-emerald-800/5 overflow-hidden h-auto  w-3/4 md:w-3/4 ml-12 mt-12 md:ml-24 rounded-xl md:mr-24 md:mt-2">
             <img
             src={currentEmpire.detailContent.pageImages[1]}
             className="h-full object-cover bg-emerald-800/5 w-full md:w-full "

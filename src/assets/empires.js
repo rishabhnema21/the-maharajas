@@ -27,12 +27,12 @@ const empires = [
     notable_rulers: ["Bimbisara", "Ajatashatru", "Mahapadma Nanda"],
     peak: "Under Ajatashatru and the Nanda Dynasty",
     detailContent: {
-      pageTheme: "#0b1b00",
-      backgroundImage: "/mughal02.jpg",
+      pageTheme: "#240a0a",
+      backgroundImage: "/bharatmap.webp",
       heading1: "The Cradle of Imperial Power",
       paragraph1:
         "Magadha rose where the Ganga’s waters fed ambition and iron-rich lands armed its kings with advantage. From the fortified hills of Rajgir to the strategic heart of Pataliputra, power was shaped through patience rather than spectacle. Under rulers like Bimbisara and Ajatashatru, conquest blended with diplomacy, alliances were sealed as carefully as battles were fought, and administration began to outlive the sword. This was the age when empire first learned endurance — when control of land, trade, and people became a system rather than a moment of victory.",
-      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      pageImages: ["/magadha2.jfif", "/magadha1.jfif"],
       heading2: "Pioneers of Samrajya",
       emperors: [
         "Bimbisar",
@@ -74,12 +74,12 @@ const empires = [
     notable_rulers: ["Chandragupta Maurya", "Bindusara", "Ashoka"],
     peak: "Reign of Emperor Ashoka",
     detailContent: {
-      pageTheme: "#0b1b00",
-      backgroundImage: "/mughal02.jpg",
+      pageTheme: "#29120a",
+      backgroundImage: "/mauryan.jpg",
       heading1: "The Rise of a Unified Subcontinent",
       paragraph1:
         "The Mauryan ascent was swift, deliberate, and unprecedented. Chandragupta Maurya, guided by the sharp intellect of Chanakya, shattered old dynasties and stitched together a realm stretching across the subcontinent. Roads carried authority, spies guarded stability, and law flowed from the capital into distant provinces. After the bloodshed of the Kalinga War, Ashoka transformed conquest into conscience, engraving power into stone edicts that spoke of Dhamma, order, and restraint. This was not merely an empire of land, but of governance refined to its highest form.",
-      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      pageImages: ["/ashoka.jfif", "/ashokapillar.jfif"],
       heading2: "the Great Unifiers",
       emperors: [
         "Chandragupta Maurya",
@@ -120,12 +120,12 @@ const empires = [
     notable_rulers: ["Samudragupta", "Chandragupta II", "Kumaragupta"],
     peak: "Gupta Golden Age",
     detailContent: {
-      pageTheme: "#0b1b00",
-      backgroundImage: "/mughal02.jpg",
+      pageTheme: "#1c1411",
+      backgroundImage: "/guptas.jpg",
       heading1: "The Age of Golden Enlightenment",
       paragraph1:
         "Under the Guptas, power found balance. Samudragupta’s campaigns secured dominance, while Chandragupta II presided over an era where stability unlocked creativity. Trade routes thrived, cities prospered, and courts echoed with poetry, science, and philosophy. Concepts like zero, advances in astronomy, and classical Sanskrit literature took shape beneath imperial protection. The Gupta age did not roar with constant war — it radiated confidence, allowing culture itself to become the empire’s most lasting conquest.",
-      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      pageImages: ["/samudragupta.jfif", "/guptas1.jfif"],
       heading2: "Guardians of Knowledge",
       emperors: [
         "Sri Gupta",
@@ -169,12 +169,12 @@ const empires = [
     notable_rulers: ["Rajaraja Chola I", "Rajendra Chola I"],
     peak: "Under Rajendra Chola I",
     detailContent: {
-      pageTheme: "#0b1b00",
-      backgroundImage: "/mughal02.jpg",
+      pageTheme: "#000014",
+      backgroundImage: "/chola.jpg",
       heading1: "The Dominion of Endless Seas",
       paragraph1:
         "The Cholas ruled with feet planted in fertile earth and eyes fixed on the open sea. From the Kaveri delta, an agrarian heartland powered monumental ambition, while fleets sailed toward Sri Lanka and Southeast Asia. Kings like Rajaraja Chola I and Rajendra Chola I fused devotion with dominance, raising stone temples that touched the heavens as ships carried authority across oceans. This was an empire that moved — through rivers, ports, and tides — carving its legacy as much in distant harbors as in its homeland.",
-      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      pageImages: ["/cholas.jpg", "/cholas2.jfif"],
       heading2: "Lords of Oceans",
       emperors: [
         "Karikala Chola",
@@ -220,12 +220,12 @@ const empires = [
     notable_rulers: ["Alauddin Khilji", "Muhammad bin Tughlaq", "Ibrahim Lodi"],
     peak: "Under Alauddin Khilji",
     detailContent: {
-      pageTheme: "#0b1b00",
-      backgroundImage: "/mughal02.jpg",
+      pageTheme: "#011f17",
+      backgroundImage: "/qutubminar.jfif",
       heading1: "The Forging of Sultanate Rule",
       paragraph1:
         "Rising from the footsteps of Qutb-ud-din Aibak, the Delhi Sultanate forged a powerful realm across northern India that endured for over three centuries. Its rulers — from the strategic Iltutmish to the ambitious Alauddin Khilji, and the enigmatic Muhammad bin Tughlaq — combined fierce military conquest with administrative innovation and cultural fusion. This era saw monumental architecture like the towering Qutb Minar, vibrant Persianate courts, and relentless battles for control. The Sultanate was a time when power was contested on many fronts — political, religious, and social — leaving a complex legacy that shaped the subcontinent’s history forever.",
-      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      pageImages: ["/razia.jfif", "/delhisultan.jpg"],
       heading2: "Sovereigns of Conquest",
       emperors: [
         "Qutb-ud-din Aibak",
@@ -280,12 +280,12 @@ const empires = [
     ],
     peak: "Under leaders like Rana Sanga and Maharana Pratap — during Mughal confrontation era",
     detailContent: {
-      pageTheme: "#0b1b00",
-      backgroundImage: "/mughal02.jpg",
+      pageTheme: "#380000",
+      backgroundImage: "/rajputana.jfif",
       heading1: "The Land of Honor and Valor",
       paragraph1:
         "Rajputana stood defiant against the passage of empires. Across the harsh landscapes of Rajasthan, warrior clans ruled from towering forts — Chittorgarh, Kumbhalgarh, Ranthambore — where stone and honor were equally unbreakable. Kings like Rana Sanga challenged invaders with unity, while Rana Pratap chose resistance over submission, even at the cost of kingdom and comfort. Rajput power was rarely centralized, yet its spirit remained unyielding, forged in valor, sacrifice, and an unspoken oath to never surrender identity.",
-      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      pageImages: ["/maharanapratap.jfif", "/rajputana2.jfif"],
       heading2: "Warriors of Honor",
       emperors: [
         "Bappa Rawal",
