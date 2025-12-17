@@ -2,6 +2,7 @@ const empires = [
   {
     id: "magadha",
     name: "The Magadha Empire",
+    detailedName: "Magadhas",
     date: "600–300 B.C",
     theme_color: "#B91C1C",
     accent_color: "#F87171",
@@ -25,11 +26,29 @@ const empires = [
     capital: "Rajagriha → Pataliputra",
     notable_rulers: ["Bimbisara", "Ajatashatru", "Mahapadma Nanda"],
     peak: "Under Ajatashatru and the Nanda Dynasty",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "The Cradle of Imperial Power",
+      paragraph1:
+        "Magadha rose where the Ganga’s waters fed ambition and iron-rich lands armed its kings with advantage. From the fortified hills of Rajgir to the strategic heart of Pataliputra, power was shaped through patience rather than spectacle. Under rulers like Bimbisara and Ajatashatru, conquest blended with diplomacy, alliances were sealed as carefully as battles were fought, and administration began to outlive the sword. This was the age when empire first learned endurance — when control of land, trade, and people became a system rather than a moment of victory.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "Pioneers of Samrajya",
+      emperors: [
+        "Bimbisar",
+        "Ajatshatru",
+        "Shishunaga",
+        "Kalashok",
+        "MahaPadmanand",
+        "Dhananand",
+      ],
+    },
   },
 
   {
     id: "mauryan",
     name: "The Mauryan Empire",
+    detailedName: "Mauryans",
     date: "322–185 B.C",
     theme_color: "#704214",
     accent_color: "#E8B86D",
@@ -54,11 +73,29 @@ const empires = [
     capital: "Pataliputra",
     notable_rulers: ["Chandragupta Maurya", "Bindusara", "Ashoka"],
     peak: "Reign of Emperor Ashoka",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "The Rise of a Unified Subcontinent",
+      paragraph1:
+        "The Mauryan ascent was swift, deliberate, and unprecedented. Chandragupta Maurya, guided by the sharp intellect of Chanakya, shattered old dynasties and stitched together a realm stretching across the subcontinent. Roads carried authority, spies guarded stability, and law flowed from the capital into distant provinces. After the bloodshed of the Kalinga War, Ashoka transformed conquest into conscience, engraving power into stone edicts that spoke of Dhamma, order, and restraint. This was not merely an empire of land, but of governance refined to its highest form.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "the Great Unifiers",
+      emperors: [
+        "Chandragupta Maurya",
+        "Bindusara",
+        "Ashoka",
+        "Dashratha",
+        "Samprati",
+        "Brihdratha",
+      ],
+    },
   },
 
   {
     id: "gupta",
     name: "The Gupta Empire",
+    detailedName: "Guptas",
     date: "320–550 A.D",
     theme_color: "#C58500",
     accent_color: "#FFE082",
@@ -82,11 +119,30 @@ const empires = [
     capital: "Pataliputra → Ujjain",
     notable_rulers: ["Samudragupta", "Chandragupta II", "Kumaragupta"],
     peak: "Gupta Golden Age",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "The Age of Golden Enlightenment",
+      paragraph1:
+        "Under the Guptas, power found balance. Samudragupta’s campaigns secured dominance, while Chandragupta II presided over an era where stability unlocked creativity. Trade routes thrived, cities prospered, and courts echoed with poetry, science, and philosophy. Concepts like zero, advances in astronomy, and classical Sanskrit literature took shape beneath imperial protection. The Gupta age did not roar with constant war — it radiated confidence, allowing culture itself to become the empire’s most lasting conquest.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "Guardians of Knowledge",
+      emperors: [
+        "Sri Gupta",
+        "Ghatotkach",
+        "Chandragupta I",
+        "Samudragupta",
+        "Chandragupta II",
+        "Skandagupta",
+        "Vishnugupta",
+      ],
+    },
   },
 
   {
     id: "chola",
     name: "The Chola Empire",
+    detailedName: "Cholas",
     date: "300 B.C–1279 A.D",
     theme_color: "#CC7722",
     accent_color: "#FFCC8A",
@@ -112,11 +168,33 @@ const empires = [
     capital: "Thanjavur",
     notable_rulers: ["Rajaraja Chola I", "Rajendra Chola I"],
     peak: "Under Rajendra Chola I",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "The Dominion of Endless Seas",
+      paragraph1:
+        "The Cholas ruled with feet planted in fertile earth and eyes fixed on the open sea. From the Kaveri delta, an agrarian heartland powered monumental ambition, while fleets sailed toward Sri Lanka and Southeast Asia. Kings like Rajaraja Chola I and Rajendra Chola I fused devotion with dominance, raising stone temples that touched the heavens as ships carried authority across oceans. This was an empire that moved — through rivers, ports, and tides — carving its legacy as much in distant harbors as in its homeland.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "Lords of Oceans",
+      emperors: [
+        "Karikala Chola",
+        "Vijayalaya Chola",
+        "Aditya I",
+        "Parantaka I",
+        "Rajaraja I",
+        "Rajendra Chola I",
+        "Rajadhiraja Chola",
+        "Kulottunga I",
+        "Rajaraja Chola III",
+        "Rajendra Chola III",
+      ],
+    },
   },
 
   {
     id: "delhi_sultanate",
     name: "The Delhi Sultanate",
+    detailedName: "Sultanate",
     date: "1206–1526 A.D",
     theme_color: "#1C4C47",
     accent_color: "#4ADEB8",
@@ -141,48 +219,90 @@ const empires = [
     capital: "Delhi",
     notable_rulers: ["Alauddin Khilji", "Muhammad bin Tughlaq", "Ibrahim Lodi"],
     peak: "Under Alauddin Khilji",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "The Forging of Sultanate Rule",
+      paragraph1:
+        "Rising from the footsteps of Qutb-ud-din Aibak, the Delhi Sultanate forged a powerful realm across northern India that endured for over three centuries. Its rulers — from the strategic Iltutmish to the ambitious Alauddin Khilji, and the enigmatic Muhammad bin Tughlaq — combined fierce military conquest with administrative innovation and cultural fusion. This era saw monumental architecture like the towering Qutb Minar, vibrant Persianate courts, and relentless battles for control. The Sultanate was a time when power was contested on many fronts — political, religious, and social — leaving a complex legacy that shaped the subcontinent’s history forever.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "Sovereigns of Conquest",
+      emperors: [
+        "Qutb-ud-din Aibak",
+        "Shams-ud-din Iltutmish",
+        "Razia Sultana",
+        "Ghiyasuddin Balban",
+        "Jalal-ud-din Firoz Khilji",
+        "Alauddin Khilji",
+        "Ghiyasuddin Tughlaq",
+        "Muhammad bin Tughlaq",
+        "Firoz Shah Tughlaq",
+        "Bahlul Lodi",
+        "Ibrahim Lodi",
+      ],
+    },
   },
 
   {
-  id: "rajputana",
-  name: "The Rajputana",
-  date: "700–1600 A.D",
-  theme_color: "#C2410C", // deep royal saffron / sandstone warrior tone
-  accent_color: "#FACC15", // gold-like highlight for royalty & heraldry
-  thumbnail: "chittorgarh.jpg",
-  images: ["rajput-warrior.png"],
-  highlighted: [
-    "Rajputana",
-    "Mewar",
-    "Marwar",
-    "Sisodia",
-    "Rathore",
-    "Prithviraj Chauhan",
-    "Maharana Pratap",
-    "Chittorgarh"
-  ],
-  short_desc:
-    "A land of warriors, honor, and unbreakable pride — Rajputana stood not merely as a kingdom, but as a legacy of courage, sacrifice, and royal splendor. From Mewar to Marwar, their forts, loyalty, and immortal valor shaped the very idea of resistance and Rajadharma.",
-  long_desc: [
-    "Rajputana was a constellation of powerful warrior clans — bound by codes of honor, dynastic rivalries, and fierce loyalty to land and lineage.",
-    "Mewar emerged as the heart of Rajput resistance, with rulers like Prithviraj Chauhan and Maharana Pratap becoming eternal symbols of bravery.",
-    "From the desert citadel of Jaisalmer to the towering Chittorgarh, their architecture stood as living statements of war, devotion, and sovereignty."
-  ],
-  capital: "No single capital — major centers included Chittorgarh, Ajmer, Jodhpur, and Jaipur",
-  notable_rulers: [
-    "Prithviraj Chauhan",
-    "Maharana Pratap",
-    "Rana Sanga",
-    "Rao Jodha",
-    "Rani Padmavati (legendary)"
-  ],
-  peak: "Under leaders like Rana Sanga and Maharana Pratap — during Mughal confrontation era"
-},
-
+    id: "rajputana",
+    name: "The Rajputana",
+    detailedName: "Rajputana",
+    date: "700–1600 A.D",
+    theme_color: "#C2410C", // deep royal saffron / sandstone warrior tone
+    accent_color: "#FACC15", // gold-like highlight for royalty & heraldry
+    thumbnail: "chittorgarh.jpg",
+    images: ["rajput-warrior.png"],
+    highlighted: [
+      "Rajputana",
+      "Mewar",
+      "Marwar",
+      "Sisodia",
+      "Rathore",
+      "Prithviraj Chauhan",
+      "Maharana Pratap",
+      "Chittorgarh",
+    ],
+    short_desc:
+      "A land of warriors, honor, and unbreakable pride — Rajputana stood not merely as a kingdom, but as a legacy of courage, sacrifice, and royal splendor. From Mewar to Marwar, their forts, loyalty, and immortal valor shaped the very idea of resistance and Rajadharma.",
+    long_desc: [
+      "Rajputana was a constellation of powerful warrior clans — bound by codes of honor, dynastic rivalries, and fierce loyalty to land and lineage.",
+      "Mewar emerged as the heart of Rajput resistance, with rulers like Prithviraj Chauhan and Maharana Pratap becoming eternal symbols of bravery.",
+      "From the desert citadel of Jaisalmer to the towering Chittorgarh, their architecture stood as living statements of war, devotion, and sovereignty.",
+    ],
+    capital:
+      "No single capital — major centers included Chittorgarh, Ajmer, Jodhpur, and Jaipur",
+    notable_rulers: [
+      "Prithviraj Chauhan",
+      "Maharana Pratap",
+      "Rana Sanga",
+      "Rao Jodha",
+      "Rani Padmavati (legendary)",
+    ],
+    peak: "Under leaders like Rana Sanga and Maharana Pratap — during Mughal confrontation era",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "The Land of Honor and Valor",
+      paragraph1:
+        "Rajputana stood defiant against the passage of empires. Across the harsh landscapes of Rajasthan, warrior clans ruled from towering forts — Chittorgarh, Kumbhalgarh, Ranthambore — where stone and honor were equally unbreakable. Kings like Rana Sanga challenged invaders with unity, while Rana Pratap chose resistance over submission, even at the cost of kingdom and comfort. Rajput power was rarely centralized, yet its spirit remained unyielding, forged in valor, sacrifice, and an unspoken oath to never surrender identity.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "Warriors of Honor",
+      emperors: [
+        "Bappa Rawal",
+        "Prithviraj Chouhan",
+        "Rana Hammir Singh",
+        "Rana Kumbha",
+        "Maharana Sanga",
+        "Maharana Pratap",
+        "Sawai Raja Jai Singh II",
+      ],
+    },
+  },
 
   {
     id: "mughal",
     name: "The Mughal Empire",
+    detailedName: "Mughals",
     date: "1526–1857 A.D",
     theme_color: "#04bf30",
     accent_color: "#017d1e",
@@ -198,6 +318,7 @@ const empires = [
       "Aurangzeb",
       "grandeur",
       "Taj Mahal",
+      "Emperors",
     ],
     short_desc:
       "A dynasty of grandeur, refinement, and imperial ambition — where art, architecture, governance, and culture flourished, defining the visual and political identity of medieval India.",
@@ -209,11 +330,29 @@ const empires = [
     capital: "Agra → Delhi → Lahore (temporary)",
     notable_rulers: ["Akbar", "Shah Jahan", "Aurangzeb"],
     peak: "Under Shah Jahan & Aurangzeb",
+    detailContent: {
+      pageTheme: "#0b1b00",
+      backgroundImage: "/mughal02.jpg",
+      heading1: "Realm of Rising Empire",
+      paragraph1:
+        "In this Realm of Rising Empires begins the tale of the Mughals — a dynasty born from the fires of Central Asian lineage and destined to carve its legend upon the Indian subcontinent. Here, the dust of battle met the shine of ambition, and every dawn carried the promise of conquest, culture, and timeless splendor. This was the age when young emperors dreamed beyond borders, when caravan routes whispered tales of power, and when an empire still in its cradle prepared to rise with a majesty the world had seldom seen. The Mughal ascent did not simply happen — it unfolded like a grand epic, written in courage, strategy, and an unshakable vision of destiny.",
+      pageImages: ["/mughaldurbar.jpeg", "/mosque.png"],
+      heading2: "the Great Emperors",
+      emperors: [
+        "Babur",
+        "Humayun",
+        "Akbar",
+        "Jahangir",
+        "Shahjahan",
+        "Aurangzeb",
+      ],
+    },
   },
 
   {
     id: "maratha",
     name: "The Maratha Empire",
+    detailedName: "Marathas",
     date: "1674–1818 A.D",
     theme_color: "#E65100",
     accent_color: "#FFA726",
@@ -242,8 +381,24 @@ const empires = [
       "Peshwa Bajirao I",
     ],
     peak: "Under Peshwa Bajirao I",
+    detailContent: {
+      pageTheme: "#2e1000",
+      backgroundImage: "/marathaEmpire.jfif",
+      heading1: "A Nation Rising from the Deccan",
+      paragraph1:
+        "The Maratha rise began not in imperial halls, but among the rugged forts of the Western Ghats. Shivaji Maharaj transformed swift raids into organized sovereignty, mastering terrain, mobility, and psychological warfare. As the empire expanded under the Peshwas, Maratha banners swept across the Deccan and into North India, unsettling older powers with speed and adaptability. This was an empire built in motion — where control was reclaimed step by step, and the idea of Swarajya reshaped the very meaning of rule.",
+      pageImages: ["/maratha.jpg", "/maratha2.jfif"],
+      heading2: "Protectors of Swarajya",
+      emperors: [
+        "Chh. Shivaji Maharaj",
+        "Chh. Sambhaji Maharaj",
+        "Chh. Rajaram",
+        "Chh. Shahuji",
+        "Balaji Vishwanath",
+        "Peshwa Bajirao I",
+      ],
+    },
   },
 ];
 
-
-export default empires
+export default empires;

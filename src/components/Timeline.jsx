@@ -80,7 +80,7 @@ const Timeline = () => {
             </div>
 
             <button
-            onClick={() => {navigate(`/empires/${slugify(empire.name, { lower: true })}`); console.log(empire.name)}}
+            onClick={() => {navigate(`/empires/${slugify(empire.id, { lower: true })}`); console.log(empire.name)}}
               className={`absolute bottom-52 md:bottom-24 cursor-pointer left-2 md:left-28 text-[#cfcdcc] tracking-widest font-[ethnic]`}
             >
               Explore
