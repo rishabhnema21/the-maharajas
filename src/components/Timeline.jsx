@@ -21,12 +21,12 @@ const Timeline = () => {
   };
 
   return (
-    <div className="h-[100vh] md:[70vh] relative  flex justify-center items-center">
+    <div className="h-[100vh] md:[70vh] relative flex justify-center items-center">
       <button
         onClick={() =>
           sliderRef.current.scrollBy({ left: -400, behavior: "smooth" })
         }
-        className="absolute z-20 left-4 text-white bg-[#201f1f] hover:bg-[#181818] p-3 cursor-pointer rounded-full"
+        className="absolute z-20 right-24 bottom-52 md:bottom-40 text-white bg-[#201f1f] hover:bg-[#181818] p-3 cursor-pointer rounded-full"
       >
         <MoveLeft size={30} />
       </button>
@@ -45,7 +45,7 @@ const Timeline = () => {
             </h1>
 
             {/* Name */}
-            <div className="md:absolute mb-12 md:mb-0 z-10 md:top-1/3 left-2 md:left-24 font-[ethnic]">
+            <div className="relative md:absolute mb-12 md:mb-0 z-10 md:top-1/3 left-2 md:left-24 font-[ethnic]">
               <h1
                 className="text-6xl md:text-7xl text-[#fff]"
                 dangerouslySetInnerHTML={{
@@ -60,7 +60,7 @@ const Timeline = () => {
 
             {/* Short Description */}
             <p
-              className="text-white md:absolute z-10 mb-12 text-justify w-[85vw] md:w-1/2 left-2 md:left-[7rem] top-[15rem] md:top-[16rem]"
+              className="text-white relative md:absolute z-10 mb-12 text-justify w-[85vw] md:w-1/2 left-2 md:left-[7rem] md:top-[16rem]"
               dangerouslySetInnerHTML={{
                 __html: highlightText(
                   empire.short_desc,
@@ -81,7 +81,7 @@ const Timeline = () => {
 
             <button
             onClick={() => {navigate(`/empires/${slugify(empire.id, { lower: true })}`); console.log(empire.name)}}
-              className={`absolute bottom-52 md:bottom-24 cursor-pointer left-2 md:left-28 text-[#cfcdcc] tracking-widest font-[ethnic]`}
+              className={`md:absolute bottom-52 md:bottom-24 cursor-pointer md:left-28 text-[#cfcdcc] tracking-widest font-[ethnic]`}
             >
               Explore
             </button>
@@ -93,7 +93,7 @@ const Timeline = () => {
         onClick={() =>
           sliderRef.current.scrollBy({ left: 400, behavior: "smooth" })
         }
-        className="absolute right-4 z-20 text-white bg-[#201f1f] hover:bg-[#181818] p-3 cursor-pointer rounded-full"
+        className="absolute bottom-52 md:bottom-40 right-8 z-20 text-white bg-[#201f1f] hover:bg-[#181818] p-3 cursor-pointer rounded-full"
       >
         {" "}
         <MoveRight size={30} />{" "}
