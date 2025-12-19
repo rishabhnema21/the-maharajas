@@ -4,7 +4,6 @@ import { Mouse } from "lucide-react";
 import { gsap } from "gsap";
 
 const Empires = () => {
-
   const containerRef = useRef(null);
   const kingRef = useRef(null);
 

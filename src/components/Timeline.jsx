@@ -81,7 +81,7 @@ const Timeline = () => {
 
             <button
             onClick={() => {navigate(`/empires/${slugify(empire.id, { lower: true })}`); console.log(empire.name)}}
-              className={`md:absolute bottom-52 md:bottom-24 cursor-pointer md:left-28 text-[#cfcdcc] tracking-widest font-[ethnic]`}
+              className={`relative md:absolute bg-[#feb58b8a] px-4 py-1 rounded-sm left-4 md:bottom-24 cursor-pointer md:left-28 text-[#030100] tracking-widest font-[ethnic]`}
             >
               Explore
             </button>

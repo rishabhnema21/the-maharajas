@@ -1,24 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+.hindi {
+  font-family: "Anek Devanagari", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 @font-face {
   font-family: "ethnic";
   src: url("/fonts/Ethnic.ttf") format("ttf");
   src: url("/fonts/Ethnic.woff") format("woff");
   /* src: url("/fonts/Jorick-Regular.woff") format("woff"); */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "trajan";
-  src: url("/fonts/trajan.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "trajan-bold";
-  src: url("/fonts/trajan-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

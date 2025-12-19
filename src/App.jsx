@@ -7,6 +7,7 @@ import Navigation from './components/Navigation'
 import About from './pages/About'
 import Empires from './pages/Empires'
 import EmpireDetail from './pages/EmpireDetail'
+import Legacy from './pages/Legacy'
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/about' element={<About />}/>
       <Route path='/empires' element={<Empires />}/>
       <Route path='/empires/:empire' element={<EmpireDetail />} />
+      <Route path='/legacy' element={<Legacy />} />
     </Routes>
     <Footer/>
     </div>
