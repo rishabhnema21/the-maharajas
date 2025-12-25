@@ -87,8 +87,8 @@ const Hero = () => {
       >
         <img
           className="rounded-b-3xl object-cover h-full w-full"
-          src="/heroimage.webp"
-          alt="hero"
+          src="https://ik.imagekit.io/c25vdtqqp/maharajas/heroimage.webp"
+          alt="The Maharajas"
         />
       </div>
 

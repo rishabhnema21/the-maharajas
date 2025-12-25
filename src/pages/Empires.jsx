@@ -43,7 +43,7 @@ const Empires = () => {
           ref={kingRef}
           className="absolute w-[80vw] md:w-auto top-[35rem] z-30 md:top-[30rem] left-1/2 -translate-x-1/2 -translate-y-1/2 h-[70vh]"
         >
-          <img src="/king.png" className="contrast-150 md:h-[70vh] " alt="" />
+          <img src="https://ik.imagekit.io/c25vdtqqp/maharajas/king.png" className="contrast-150 md:h-[70vh] " alt="" />
         </div>
 
         <div

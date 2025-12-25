@@ -12,7 +12,7 @@ const Legacy = () => {
       <div>
         <img
           className="absolute h-100 z-0 right-0 top-0 mask-l-from-30% mask-b-from-8 contrast-125"
-          src="/indiandurbar.jfif"
+          src="https://ik.imagekit.io/c25vdtqqp/maharajas/indiandurbar.jfif"
           alt="indian durbar"
         />
       </div>
@@ -27,8 +27,8 @@ const Legacy = () => {
 
         <img
           className="z-0 absolute right-0 top-1/2 mask-t-from-0 mask-r-from-30% mask-b-from-0 contrast-125"
-          src="/fort1.webp"
-          alt=""
+          src="https://ik.imagekit.io/c25vdtqqp/maharajas/fort1.webp"
+          alt="Fort"
         />
 
         <div className="absolute left-36 top-[80%] text-white">

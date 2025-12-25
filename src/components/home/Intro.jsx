@@ -90,7 +90,7 @@ const Intro = () => {
         {/* Image */}
         <div className="rounded-2xl w-[80vw] md:w-1/2 h-[20rem] md:h-[30rem] relative overflow-hidden left-0 md:left-12">
           <img
-            src="/herobg.webp"
+            src="https://ik.imagekit.io/c25vdtqqp/maharajas/herobg.webp"
             className="object-cover object-bottom w-full h-full"
             alt="royal"
           />

@@ -6,8 +6,8 @@ const About = () => {
       <div className="w-screen h-[60vh]">
         <img
           className="object-cover md:mask-l-from-80% md:mask-r-from-80% mask-b-from-10% object-top-left md:object-bottom w-full h-full"
-          src="https://i.pinimg.com/1200x/17/1d/6f/171d6f1f7d35153d05136f411389dc02.jpg"
-          alt=""
+          src="https://ik.imagekit.io/c25vdtqqp/maharajas/shivajidurbar.jpg"
+          alt="Shrimant Shivaji Durbar"
         />
       </div>
 
@@ -65,7 +65,7 @@ const About = () => {
       </div>
 
       <div className="z-0">
-        <img className="absolute top-[55vh] z-0 right-0 mask-l-from-65% mask-b-from-70% mask-t-from-70% object-cover h-[80vh] w-[40vw]" src="https://i.pinimg.com/736x/2c/6c/ea/2c6cea802d2493b73bf4126e63f4854a.jpg" alt="" />
+        <img className="absolute top-[55vh] z-0 right-0 mask-l-from-65% mask-b-from-70% mask-t-from-70% object-cover h-[80vh] w-[40vw]" src="https://ik.imagekit.io/c25vdtqqp/maharajas/maharajas2.jpeg?updatedAt=1759841557807" alt="" />
       </div>
     </div>
   );

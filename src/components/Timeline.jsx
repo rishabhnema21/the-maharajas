@@ -74,7 +74,7 @@ const Timeline = () => {
             <div className="w-[100vw] md:w-[50rem] h-[100%] z-0 absolute top-2  md:right-8">
               <img
                 className={`object-cover ${empire.image_pos} mask-b-from-60%  mask-r-from-60% mask-t-from-80% mask-l-from-1% h-full w-full`}
-                src={`/${empire.thumbnail}`}
+                src={`${empire.thumbnail}`}
                 alt={empire.name}
               />
             </div>
