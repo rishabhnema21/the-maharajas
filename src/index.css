@@ -3,6 +3,7 @@
 
 .hindi {
   font-family: "Anek Devanagari", sans-serif;
+  font-display: swap;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
@@ -12,6 +13,7 @@
 
 @font-face {
   font-family: "ethnic";
+  font-display: swap;
   src: url("/fonts/Ethnic.ttf") format("ttf");
   src: url("/fonts/Ethnic.woff") format("woff");
   /* src: url("/fonts/Jorick-Regular.woff") format("woff"); */

@@ -4,7 +4,7 @@ import ImperialLegacy from "../components/ImperialLegacy";
 const Legacy = () => {
   return (
     <div className="bg-gradient-to-bl from-[#000] overflow-x-hidden via-[#2c000e] to-[#120000] min-h-screen">
-      <h1 className="font-[ethnic] pt-26 translate-x-[10%] text-5xl text-white">
+      <h1 className="z-10 relative font-[ethnic] pt-26 translate-x-[10%] text-5xl text-white">
         Beyond <span className="text-[#ff8095] text-7xl">Thrones</span> <br />{" "}
         &ensp;&ensp; & <span className="text-[#ff8095] text-7xl">Time</span>
       </h1>
@@ -18,7 +18,7 @@ const Legacy = () => {
       </div>
 
       <div>
-        <div className="text-[#fde5d7] text-2xl font-[ethnic] mt-18 w-1/2 ml-36 relative z-10">
+        <div className="text-[#fde5d7] text-2xl font-[ethnic] mt-18 w-3/4 md:w-1/2 ml-8 md:ml-36 relative z-10">
           Empires rose with banners and ambition, <br />
           and fell into silence with time. <br />
           Yet history does not remember power alone — <br />
@@ -31,12 +31,12 @@ const Legacy = () => {
           alt="Fort"
         />
 
-        <div className="absolute left-36 top-[80%] text-white">
+        <div className="md:absolute md:left-36 md:top-[80%] ml-8 mt-12 md:mt-0 md:ml-0 text-white">
           <h2 className="font-[ethnic] text-4xl text-white">
             Culture & <span className="text-[#ff8095] text-5xl">Wisdom</span>
           </h2>
 
-          <div className="w-[40%] mt-7">
+          <div className="md:w-[40%] w-[85%] mt-7">
             <p className="mb-5">
               Indian empires supported organized learning, scholarship, and
               artistic production through state patronage. Institutions for
@@ -55,12 +55,12 @@ const Legacy = () => {
           </div>
         </div>
 
-        <div className="translate-x-[55%] relative z-10 text-white">
+        <div className="md:translate-x-[55%] ml-8 md:ml-0 relative mt-8 md:mt-0 z-10 text-white">
           <h2 className="font-[ethnic] text-4xl text-white">
             Military & <span className="text-[#ff8095] text-5xl">Strategy</span>
           </h2>
 
-          <div className="w-[40%] mt-10">
+          <div className="md:w-[40%] w-[85%] mt-10">
             <p className="mb-5">
               Indian empires mastered warfare through strategy, terrain, and
               enduring stone. Forts crowned hills, guarded coasts, and

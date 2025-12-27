@@ -74,13 +74,8 @@ const ImperialLegacy = () => {
         <Column images={[images[6], images[7], images[8]]} y={y4} />
       </div>
       <div className="font-geist relative flex h-screen items-center justify-center gap-2">
-        {/* <div className="absolute left-1/2 top-[10%] grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-black">
-          <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">
-            scroll Up to see
-          </span>
-        </div> */}
-        <div>
-          <h3 className="text-[#f6d1d1] text-2xl font-[ethnic]">
+        <div className="mt-9">
+          <h3 className="text-[#f6d1d1] text-center text-2xl font-[ethnic]">
             Empires faded, but the ideas they nurtured continued to shape a
             civilization.
           </h3>
