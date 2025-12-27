@@ -3,19 +3,22 @@ import Lenis from "lenis";
 import { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/magadha2.jfif",
-  "/qutubminar.jfif",
-  "/maratha2.jfif",
-  "/delhisultan.jpg",
-  "/chola.jpg",
-  "/elephant.jpg",
-  "/chittorgarh.jpg",
-  "/cholas1.jfif",
-  "/rajputana2.jfif",
-  "/samudragupta.jfif",
-  "/marathaEmpire.jfif",
-  "/images/lummi/img12.png",
-  "/images/lummi/img13.png",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/chola.jpg",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/samudragupta.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/samudragupta.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/guptas1.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/magadha1.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/bharatmap.webp",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/maratha2.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/maratha.jpg",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/marathaEmpire.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/chittorgarh.jpg",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/rajputana.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/maharanapratap.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/rajputana2.jfif",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/delhisultan.jpg",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/delhisultan.jpg",
+  "https://ik.imagekit.io/c25vdtqqp/maharajas/delhisultan.jpg",
 ];
 
 const ImperialLegacy = () => {

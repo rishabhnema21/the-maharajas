@@ -59,7 +59,8 @@ const Navigation = () => {
 
   return (
     <nav className="fixed w-full p-2 md:p-6 z-50 top-0 left-0  flex justify-between items-center">
-      <Logo className="z-50" />
+      <Link to="/"><Logo className="z-50" /></Link>
+      
 
       <button
         className="text-white bg-[#212121] hover:bg-gradient-to-tl hover:from-[#2b2b2b] hover:to-[#111] transition-all duration-200 ease-in-out cursor-pointer h-12 w-12 md:w-14 md:h-14 rounded-full flex justify-center items-center z-[60]"
@@ -78,7 +79,7 @@ const Navigation = () => {
         exit= "exit"
         >
           <div className="mb-12">
-            <Logo/>
+            <Link to="/"><Logo/></Link>
           </div>
             <motion.ul className="space-y-8 w-full text-center px-8 font-semibold"
             variants={overLay}>
